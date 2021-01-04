@@ -1,0 +1,314 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+button:focus {
+    transition: scale 1s;
+    outline: none;
+    scale: 1.1;
+}
+
+#filter {
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background-home {
+    background-color: #161616;
+    background: url('../images/background_1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#background-menu {
+    background-color: #161616;
+    background: url('../images/background_2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#background-about {
+    background-color: #161616;
+    background: url('../images/background_3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main-container {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #main-container {
+        flex-direction: column;
+        border-bottom: 3px solid  #04A777;
+        margin: 0;
+    }
+    #menu h3 {
+        position: relative;
+        bottom: 25px;
+        padding: 0;
+        margin: 0 20px;
+    }
+    #main-container h1 { 
+        position: relative;
+        bottom: 15px;
+    }
+    #main-container div button {
+        position: relative;
+        bottom: 10px;
+    }
+    
+}
+
+#main-container div button {
+    background-color: #04A777;
+    padding: 7px 20px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #036e4e;
+}
+
+#main-container div button:active {
+    box-shadow: inset 0px 0px 10px 0px #036e4e;
+}
+
+#menu {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu h3 {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#menu h3:focus {
+    background-color: #04A777;
+    border-radius: 4px;
+    transition: padding 1s; 
+    padding: 0 30px;
+    outline: none; 
+}
+
+#link-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+#link-container div{
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+}
+
+#content button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    background-color: #04A777;
+    padding: 7px 15px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #036e4e;
+}
+
+#content button:active {
+    box-shadow: inset 0px 0px 10px 0px #036e4e;
+}
+
+#home-container {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#grid-container {
+    margin: 20px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 50px;
+    justify-items: center;
+}
+
+
+#chef-photo {
+    background-color: #464646;
+    width: 300px;
+    height: 400px;
+    background: url('../images/chef.jpg');
+    background-size: cover;
+}
+.grid {
+    margin: 50px;
+    width: 400px;
+    height: 300px;
+    background-color: #161616;
+    border: 2px solid #04A777;
+    box-shadow: 0px 0px 5px 0px #036e4e;
+    border-radius: 4px;
+}
+
+.grid:hover > .price {
+    opacity: 1;
+}
+
+.price {
+    box-sizing: border-box;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(4,167,119, .5);
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+.price h4 {
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    font-size: 1.2rem;
+}
+
+.item-1 {
+    background: url('../images/menu/pepperoni.jpg');
+    background-position: 100% center;
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('../images/menu/black_pasta.jpg');
+    background-position: 25% center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('../images/menu/beef_burger.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-4 {
+    background: url('../images/menu/salmon_salad.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-5 {
+    background: url('../images/menu/grilled_fish_steak.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-6 {
+    background: url('../images/menu/beef_cream_soup.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-7 {
+    background: url('../images/menu/Pan_de_Elote.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-8 {
+    background: url('../images/menu/berries_desert.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link:focus {
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(4,167,119, .5);
+}
+
+
+#insta-link, #facebook-link, #email-link, #twitter-link {
+    margin: 10px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+
+
+#insta-link {background: url('../images/links/instagram-15-64.png');}
+#facebook-link {background: url('../images/links/facebook-5-64.png');}
+#twitter-link {background: url('../images/links/twitter-5-64.png');}
+#email-link {background: url('../images/links/email-64.png');}
+
+
+#content {
+    width: 100vw;
+    background-color:rgba(0,0,0, .8);
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+}
+#chef-photo {
+    background-color: #161616;
+    border: 2px solid #04A777;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 0px #036e4e;
+}
+#chef-container {
+    padding-bottom: 70px;
+    margin: 30px auto;
+    position: relative;
+    left: 25;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 400px;
+}
+#chef-info {
+    text-align: left;
+    width: 300px;
+}
+
+#review-container {
+    padding: 50px 0;
+}
+
