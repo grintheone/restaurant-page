@@ -22,7 +22,7 @@ button:focus {
 
 #background-home {
     background-color: #161616;
-    background: url('../images/background_1.jpg');
+    background: url('./images/background_1.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ button:focus {
 
 #background-menu {
     background-color: #161616;
-    background: url('../images/background_2.jpg');
+    background: url('./images/background_2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,7 +40,7 @@ button:focus {
 
 #background-about {
     background-color: #161616;
-    background: url('../images/background_3.jpg');
+    background: url('./images/background_3.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -165,7 +165,7 @@ button:focus {
     background-color: #464646;
     width: 300px;
     height: 400px;
-    background: url('../images/chef.jpg');
+    background: url('./images/chef.jpg');
     background-size: cover;
 }
 .grid {
@@ -203,49 +203,49 @@ button:focus {
 }
 
 .item-1 {
-    background: url('../images/menu/pepperoni.jpg');
+    background: url('./images/menu/pepperoni.jpg');
     background-position: 100% center;
     background-size: cover;
 }
 
 .item-2 {
-    background: url('../images/menu/black_pasta.jpg');
+    background: url('./images/menu/black_pasta.jpg');
     background-position: 25% center;
     background-size: cover;
 }
 
 .item-3 {
-    background: url('../images/menu/beef_burger.jpg');
+    background: url('./images/menu/beef_burger.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .item-4 {
-    background: url('../images/menu/salmon_salad.jpg');
+    background: url('./images/menu/salmon_salad.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .item-5 {
-    background: url('../images/menu/grilled_fish_steak.jpg');
+    background: url('./images/menu/grilled_fish_steak.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .item-6 {
-    background: url('../images/menu/beef_cream_soup.jpg');
+    background: url('./images/menu/beef_cream_soup.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .item-7 {
-    background: url('../images/menu/Pan_de_Elote.jpg');
+    background: url('./images/menu/Pan_de_Elote.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 .item-8 {
-    background: url('../images/menu/berries_desert.jpg');
+    background: url('./images/menu/berries_desert.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -272,10 +272,10 @@ button:focus {
 
 
 
-#insta-link {background: url('../images/links/instagram-15-64.png');}
-#facebook-link {background: url('../images/links/facebook-5-64.png');}
-#twitter-link {background: url('../images/links/twitter-5-64.png');}
-#email-link {background: url('../images/links/email-64.png');}
+#insta-link {background: url('./images/links/instagram-15-64.png');}
+#facebook-link {background: url('./images/links/facebook-5-64.png');}
+#twitter-link {background: url('./images/links/twitter-5-64.png');}
+#email-link {background: url('./images/links/email-64.png');}
 
 
 #content {
